@@ -6,6 +6,7 @@
         <!-- Fonts -->
         <link href="https:/ /fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
+        [<a href='/posts/create'>create</a>]
 
     </head>
     <body>
