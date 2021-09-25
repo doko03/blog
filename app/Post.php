@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
+
 {
         public function getPaginate(int $limit_count = 10)
         {
@@ -16,6 +17,10 @@ class Post extends Model
         'body',
     ];
 
+    protected $fillable = [
+        'title',
+        'body',
+    ];
 
 
 }

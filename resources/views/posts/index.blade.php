@@ -5,7 +5,9 @@
         <title>Blog</title>
         <!-- Fonts -->
         <link href="https:/ /fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+
         [<a href='/posts/create'>create</a>]
+
     </head>
     <body>
         <h1>Blog Name</h1>
@@ -23,4 +25,6 @@
             {{ $posts->links() }}
         </div>
     </body>
+
 </html>
+
