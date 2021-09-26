@@ -16,11 +16,11 @@ class Post extends Model
         'title',
         'body',
     ];
+        public function edit(Post $post)
+        {
+            return view('posts/edit')->with(['post' => $post]);
+        }
 
-    protected $fillable = [
-        'title',
-        'body',
-    ];
 
 
 }
