@@ -3,10 +3,12 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Post extends Model
 
 {
+        use SoftDeletes;
         public function getPaginate(int $limit_count = 10)
         {
             // updated_atで降順に並べたあと、limitで件数制限をかける
@@ -16,11 +18,5 @@ class Post extends Model
         'title',
         'body',
     ];
-
-    protected $fillable = [
-        'title',
-        'body',
-    ];
-
 
 }

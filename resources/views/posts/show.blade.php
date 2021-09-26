@@ -18,7 +18,13 @@
                 <p>{{ $post->body }}</p>    
             </div>
         </div>
+        <form action="/posts/{{ $post->id }}" id="form_{{ $post->id }}" method="post" style="display:inline">
+            @csrf
+            @method('DELETE')
+            <button type="submit">delete</button> 
+        </form>
         <div class="footer">
+             <p class="edit">[<a href="/posts/{{ $post->id }}/edit">edit</a>]</p>
             <a href="/">戻る</a>
         </div>
     </body>
