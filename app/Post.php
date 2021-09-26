@@ -18,5 +18,7 @@ class Post extends Model
         'title',
         'body',
     ];
+        
+
 
 }
